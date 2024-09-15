@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload Document</title>
+        <link rel="stylesheet" href="index.css">
+        <script
+            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+        </script>
+    </head>
+    <body>
+
+        <p style="margin-top:3%;">Upload Your Documents</p>
+        <p style="margin-top:3px;color:red" id="dummy"></p>
+        <form autocomplete="off" id="reset" class="container">
+            <input type="text" class="box" id="name" placeholder="Name">
+            <input type="text" class="box" id="email"
+                placeholder='user111@gmail.com'>
+            <input type="text" class="box" id="pass" placeholder='Password'>
+            <select name="" class="box" id="docs">
+                <option class="font">--Please choose an option--</option>
+                <option class="font">Aadhaar Card</option>
+                <option class="font">VoterId</option>
+                <option class="font">Pancard</option>
+                <option class="font">Driving License</option>
+                <option class="font">RationCard</option>
+                <option class="font">Passport</option>
+            </select>
+            <br>
+            <p style="color:red;font-size: smaller;">Document type should be pdf
+                and less than 200KB</p>
+            <input type="file" class="box" id="upload"> <br>
+            <button class="bute" id='submit'style="margin-left:15%" > Submit</button>
+            <input type="button" value="Reset" class="bute" style="margin-left:
+                30%;" onclick="reset()"> <br>
+        </form>
+        <div class="popup" id="pop">
+            <p>Successfully Uploaded!!</p>
+            <lottie-player
+                src="https://assets1.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+                background="transparent" class="ok" speed="1" style="width:
+                300px;height:300px;"
+                loop autoplay></lottie-player>
+        </div>
+        <div class="container1" id="ok1">
+            <p class="div_f">HEY THERE!!! Whats up?</p>
+            <lottie-player
+                src="https://assets7.lottiefiles.com/packages/lf20_ywm4ifek.json"
+                background="transparent" speed="1" style="width: 300px;
+                height: 300px;" loop autoplay></lottie-player>
+
+        </div>
+        <div class="container2" id="ok2">
+            <p class="div_f">STAY HOME! STAY SAFE!</p>
+            <lottie-player
+                src="https://assets9.lottiefiles.com/packages/lf20_nKCnOy.json"
+                background="transparent" speed="1" style="width: 300px;
+                height: 300px;" loop autoplay></lottie-player>
+        </div>
+        <div class="container3">
+            <p class="div_f" onmouseover="func()"   
+            style="color: rgb(243, 138, 243); font-size: x-large;">Hey...See Whats Here!!</p>
+            <lottie-player
+                src="https://assets8.lottiefiles.com/packages/lf20_kxikfqwj.json"
+               id="luagh"  background="transparent" speed="1" style="width: 300px; height:
+                300px;display: none;" loop autoplay></lottie-player>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
